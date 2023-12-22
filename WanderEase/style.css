@@ -1,0 +1,459 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/bannerrrr.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 7%;
+}
+
+.logo {
+    width: 54px;
+    cursor: pointer;
+}
+
+.logo:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+.navlinks li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+    font-size: 20px;
+}
+
+.navlinks li:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+.navlinks li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+.navlinks li a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+.registerbtn {
+    text-decoration: none;
+    background-color: #fff;
+    color: black;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 20px;
+}
+
+.registerbtn:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+.container {
+    padding: 0 7%;
+}
+
+.header h1 {
+    font-size: 4vw;
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+    padding-top: 18%;
+    text-decoration-color: black;
+}
+
+.searchbar {
+    background: #fff;
+    width: 70%;
+    margin: 30px auto;
+    padding: 6px 10px 6px 30px;
+    border-radius: 50px;
+}
+
+.searchbar form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.searchbar form input {
+    display: block;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.searchbar form button {
+    background: #0D98BA;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.searchbar form button:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+.searchbar form button img {
+    width: 16px;
+    margin-top: 5px;
+}
+
+.locationinput {
+    flex: 1;
+}
+
+.searchbar form label {
+    font-weight: 600;
+}
+
+.subtitle {
+    font-weight: 500;
+    font-size: 2.2vw;
+    margin: 50px 0 20px;
+    color: #333;
+}
+
+
+.exclusives {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 30px;
+}
+.exclusives div img {
+    width: 100%;
+    border-radius: 10px;   
+}
+
+.exclusives div img:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.exclusives div {
+    position: relative;
+}
+
+.exclusives div span {
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    color: #fff;
+}
+
+.trending {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.trending div img {
+    width: 100%;
+    border-radius: 10px;  
+    margin-top: 5px; 
+}
+
+.trending div img:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.trending h3 {
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.cta {
+    margin: 80px 0;
+    background-image: url(images/peter-zuijdwegt-054Bki4kz7Q-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 5%;
+    color: #fff;
+    cursor: pointer;
+}
+
+.cta:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.01);
+}
+
+.cta h3 {
+    font-size: 3vw;
+    line-height: 5.3vw;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 21px;
+}
+
+.cta p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.ctabtn {
+    background: white;
+    color: black;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.ctabtn:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+.stories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.stories div img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.stories div img:hover {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+.stories div {
+    position: relative;
+    text-align: center;
+}
+
+.stories p {
+    width: 80%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    font-size: 26px;
+    color: #fff;
+}
+
+.startbtn {
+    text-decoration: none;
+    background: #0D98BA;
+    color: #fff;
+    width: 80%;
+    max-width: 350px;
+    display: block;
+    text-align: center;
+    margin: 60px auto;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+.startbtn:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+.aboutmsg {
+    text-align: center;
+    color: #333;
+    margin: 80px 0;
+    font-size: 16px;
+}
+
+.aboutmsg h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.footer {
+    margin: 80px 0 10px;
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #999;
+    font-size: 22px;
+    margin: 0 10px;
+}
+
+.footer hr {
+    background: #999;
+    height: 1px;
+    width: 100%;
+    border: 0;
+    margin: 20px 0;
+}
+
+.footer p {
+    padding-bottom: 15px;
+}
+
+.active {
+    position: relative;
+}
+
+nav .fa-bars {
+    display: none;
+}
+
+.footer i:hover {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+#a:hover {
+    background-color: black;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+#b:hover {
+    background-color: red;
+    padding: 10px 10px;
+    color: white;
+    border-radius: 5px;
+
+}
+#c:hover {
+    background-color: blue;
+    padding: 10px 10px;
+    color: white;
+    border-radius: 5px;
+
+}
+
+@media only screen and (max-width:700px) {
+    .logo {
+        position: fixed;
+        top: 4%;
+        left: 7%;
+    }
+    nav {
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        display: inline-block;
+        width: 100%; 
+        padding: 100px 7% 0;
+        background: black;
+        text-align: right;
+        max-height: 100px;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav .navlinks {
+        margin: 10px 0;
+        display: block;
+    }
+    .navlinks li a {
+        color: white;
+    }
+    .registerbtn {
+        margin: 15px 0 30px;
+        display: inline-block;
+    }
+    nav .fa-bars {
+        display: block;
+        position: fixed;
+        top: 4%;
+        right: 7%;
+        color: #fff;
+        font-size: 28px;
+    }
+    .active::after {
+        left: -40px;
+        transform: (0,50%);
+        bottom: 50%;
+    }
+    .hidemenu {
+        max-height: 300px;
+    }
+    .header h1 {
+        font-size: 7vw;
+        padding-top: 200px;
+    }
+    .searchbar {
+        width: 90%;
+        margin: 30px auto;
+        padding: 20px 10px 30px;
+        border-radius: 5px;
+        position: relative;
+    }
+    .searchbar form {
+        display: block;
+    }
+    .searchbar form input {
+        border-bottom: 1px solid #ddd;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+    .searchbar form button {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%,50%);
+    }
+    .subtitle {
+        font-size: 6vw;
+    }
+    .cta {
+        padding: 15% 5%;
+    }
+    .cta h3 {
+        font-size: 7vw;
+        line-height: 8vw;
+    }
+    .cta p {
+        font-size: 14px;
+    }
+    .ctabtn {
+        padding: 6px 15px;
+        border-radius: 4px;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .stories p {
+        font-size: 22px;
+    }
+    .aboutmsg {
+        font-size: 15px;
+    }
+}

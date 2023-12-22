@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StayWay</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b23baf28b7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <nav id="navbar">
+            <img src="images/logo.png" class="logo">
+            <ul class="navlinks">
+                <li><a href="#" class="active"><i class="fa-solid fa-plane-departure"></i> Flights</a></li>
+                <li><a href="#"><i class="fa-solid fa-hotel"></i> Hotels</a></li>
+                <li><a href="#"><i class="fa-solid fa-car"></i> Car Rentals</a></li>
+            </ul>
+            <a href="#" class="registerbtn">Register</a>
+            <i class="fas fa-bars" onclick="togglebtn()"></i>
+        </nav>
+        <div class="container">
+            <h1>Find Your Next Destination</h1>
+            <div class="searchbar">
+                <form>
+                    <div class="locationinput">
+                        <label>Location</label>
+                        <input type="text" placeholder="Where are you going?">
+                    </div>
+                    <div>
+                        <label>Check-In</label>
+                        <input type="text" placeholder="DD-MM-YYYY">
+                    </div>
+                    <div>
+                        <label>Check-Out</label>
+                        <input type="text" placeholder="DD-MM-YYYY">
+                    </div>
+                    <button type="submit"><img src="images/search.png"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="subtitle">Exclusives</h2>
+        <div class="exclusives">
+            <div><img src="images/image-1.png"><span><h3>London</h3><p>Starts at $299</p></span></div>
+            <div><img src="images/image-2.png"><span><h3>Switzerland</h3><p>Starts at $299</p></span></div>
+            <div><img src="images/image-3.png"><span><h3>Australia</h3><p>Starts at $299</p></span></div>
+            <div><img src="images/image-4.png"><span><h3>France</h3><p>Starts at $299</p></span></div>
+            <div><img src="images/image-5.png"><span><h3>Amsterdam</h3><p>Starts at $299</p></span></div>
+            <div><img src="images/image-6.png"><span><h3>Netherlands</h3><p>Starts at $299</p></span></div>
+            <div><img src="images/image-7.png"><span><h3>New York</h3><p>Starts at $299</p></span></div>
+            <div><img src="images/image-8.png"><span><h3>Chicago</h3><p>Starts at $299</p></span></div>
+            <div><img src="images/image-9.png"><span><h3>San Fransisco</h3><p>Starts at $299</p></span></div>
+            <div><img src="images/image-10.png"><span><h3>Shanghai</h3><p>Starts at $299</p></span></div>
+        </div>
+
+        <h2 class="subtitle">Trending Places</h2>
+        <div class="trending">
+            <div><img src="images/dubai.png"><h3>Dubai</h3></div>
+            <div><img src="images/new-york.png"><h3>New York</h3></div>
+            <div><img src="images/paris.png"><h3>Paris</h3></div>
+        </div>
+        <div class="cta">
+            <h3>Your Journey, <br> Your Adventure.</h3>
+            <a href="#" class="ctabtn">Know More</a>
+        </div>
+        <h2 class="subtitle">Traveller Stories</h2>
+        <div class="stories">
+            <div><img src="images/story-1.png"><p>Popular European Countries at affordable price.</p></div>
+            <div><img src="images/story-2.png"><p>Popular European Countries at affordable price.</p></div>
+            <div><img src="images/story-3.png"><p>Popular European Countries at affordable price.</p></div>
+        </div>
+        <a href="#" class="startbtn">Book Now</a>
+        <div class="aboutmsg">
+            <h2>About Us</h2>
+            <p>WanderEase aims to revolutionize the way tourists plan and book their vacations by combining functionality with aesthetics, providing an enjoyable and stress-free experience from destination discovery to booking confirmation.</p>
+            <br>
+            <p>WanderEase allows users to share their itineraries and travel plans on social media platforms. This feature facilitates collaboration and recommendations among friends and fellow travelers.</p>
+        </div>
+        <div class="footer">
+            <a href="https://www.twitter.com/" id="a"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.google.com/" id="b"><i class="fa-brands fa-google"></i></a>
+            <a href="https://www.facebook.com/" id="c"><i class="fa-brands fa-facebook-f"></i></a>
+            <hr>
+            <p>Adventure awaits where the path ends and the unknown begins.</p>
+        </div>
+    </div>
+    <script>
+        var navbar= document.getElementById("navbar");
+
+        function togglebtn() {
+            navbar.classList.toggle("hidemenu");
+        }
+    </script>
+</body>
+</html>
